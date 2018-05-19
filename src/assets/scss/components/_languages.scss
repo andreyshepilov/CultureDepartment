@@ -1,0 +1,38 @@
+.languages {
+    @include list-reset;
+    @extend %clearfix;
+
+    display: inline-block;
+}
+
+.languages__item {
+    float: left;
+    color: $clr-3;
+    transition: color 0.3s;
+    margin: 0;
+
+    &:after {
+        content: '/';
+        margin: 0 5px;
+        color: $clr-3;
+    }
+
+    &:last-of-type:after {
+        display: none;
+    }
+
+    &.active,
+    &:hover {
+        color: $clr-7;
+    }
+}
+
+.languages__link {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

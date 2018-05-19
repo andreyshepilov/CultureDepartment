@@ -1,0 +1,80 @@
+.nav-main__list {
+    @include list-reset;
+    @extend %clearfix;
+
+    color: inherit;
+    display: block;
+
+    .slicknav_nav & {
+        margin: 0;
+    }
+
+    @include media("<md") {
+        display: none;
+    }
+}
+
+.nav-main__item {
+    color: inherit;
+    float: left;
+    margin: 0;
+
+    .slicknav_nav & {
+        float: none;
+    }
+}
+
+.nav-main__link {
+    text-transform: uppercase;
+    color: $clr-3;
+    transition: color 0.3s;
+    background-color: transparent;
+    padding: 8px;
+    display: inline-block;
+    font-size: 15px;
+
+    .slicknav_nav & {
+        color: $clr-3;
+        padding: 8px 8px 8px 5px;
+        margin: 0 0 5px;
+    }
+    
+    &.active,
+    &:hover {
+        text-decoration: none;
+        color: $clr-white;
+        
+        .slicknav_nav & {
+            background-color: transparent;
+            color: $clr-white;
+        }
+    }
+}
+
+.nav-main {
+    .slicknav_menu {
+        display: none;
+        background-color: transparent;
+        padding: 4px 0 0;
+
+        @include media("<md") {
+            display: block;
+        }
+    }
+
+    .slicknav_btn {
+        float: left;
+        padding: 10px 15px;
+        margin: 0 0 6px;
+        background-color: $clr-6;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $clr-7;
+        }
+    }
+
+    .slicknav_icon-bar {
+        background-color: $clr-1;
+    }
+}

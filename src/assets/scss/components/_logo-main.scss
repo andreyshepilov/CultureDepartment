@@ -1,0 +1,32 @@
+.logo-main {
+    font-family: $font-alternate;
+}
+
+.logo-main__link {
+    @extend %clearfix;
+
+    display: block;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.logo-main__image {
+    float: left;
+    margin: 0px 15px 0 0;
+}
+
+.logo-main__description {
+    float: left;
+    max-width: 315px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    top: 10px;
+
+    @include media("<sm") {
+        display: none;
+    }
+}

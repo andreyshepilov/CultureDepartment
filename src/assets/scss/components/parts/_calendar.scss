@@ -1,0 +1,13 @@
+.calendar {
+    color: $clr-white;
+    display: inline-block;
+    text-align: center;
+}
+.calendar__day {
+    background-color: $clr-7;
+    padding: 0 10px;
+}
+.calendar__month {
+    background-color: $clr-6;
+    padding: 0 10px;
+}

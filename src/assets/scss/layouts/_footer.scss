@@ -1,0 +1,32 @@
+.footer__inner {
+    @extend %clearfix;
+
+    padding: 30px 0 24px;
+    border-top: 3px solid $clr-8;
+}
+
+.footer__copy-wrapper {
+    float: left;
+    max-width: 60%;
+    padding: 0 15px 0 0;
+
+    @include media("<sm") {
+        float: none;
+        padding: 0;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 0 15px;
+    }
+}
+
+.footer__socials-wrapper {
+    float: right;
+    max-width: 40%;
+
+    @include media("<sm") {
+        float: none;
+        padding: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,12 @@
+.button-link {
+    font-family: $font-alternate;
+    background-color: $clr-2;
+    color: $clr-white;
+    display: block;
+    font-size: 24px;
+    padding: 2px 16px 3px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
